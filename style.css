@@ -12,8 +12,10 @@
 }
 
 .header h1{
+	font-family: 'Pangolin', cursive;
 	color: black;
 	position: absolute;
+	font-size: 60px;
 	top: 15%;
 	left: 20%;
 }
