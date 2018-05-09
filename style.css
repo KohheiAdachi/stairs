@@ -22,7 +22,7 @@
 }
 
 .introduction {
-	width: 400px;
+	width: 380px;
 	height: 500px;
 	border: 1px solid #000;
 	margin: 16px;
@@ -41,6 +41,13 @@
 	vertical-align: top;
 }
 
+.favorite ul {
+	list-style: none;
+}
+
+.favorite li {
+	margin-left: auto;
+}
 .container{
 	width: 800px
 	margin: 0 auto;
