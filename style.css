@@ -15,7 +15,7 @@
 	font-family: 'Pangolin', cursive;
 	color: black;
 	position: absolute;
-	font-size: 60px;
+	font-size: 80px;
 	text-align: center;
 	top: 15%;
 	left: 20%;
@@ -40,13 +40,13 @@
 	display: inline-block;
 	vertical-align: top;
 }
-
+/*
 .favorite ul {
 	list-style: none;
 }
-
+*/
 .favorite li {
-	margin-left: auto;
+	margin-left: 5%;
 }
 .container{
 	width: 800px
