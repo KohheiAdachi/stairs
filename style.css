@@ -4,7 +4,7 @@
 }
 
 .header {
-	background-image: url(images/big_cat_sama.jpg);
+	background-image: url(images/air-plane.jpg);
 	margin: 0;
 	height: 100vh;
 	background-size: cover;
@@ -12,7 +12,7 @@
 }
 
 .header h1{
-	color: white;
+	color: black;
 	position: absolute;
 	top: 15%;
 	left: 20%;
@@ -32,4 +32,9 @@
 	border: 1px solid #000;
 	display: inline-block;
 	vertical-align: top;
+}
+
+.container{
+	width: 800px
+	margin: 0 auto;
 }
