@@ -22,7 +22,8 @@
 }
 
 .introduction {
-	width: 380px;
+	font-family: 'Titan One', cursive;
+	width: 400px;
 	height: 500px;
 	border: 1px solid #000;
 	margin: 16px;
@@ -32,6 +33,7 @@
 }
 
 .favorite {
+	font-family: 'Ubuntu', sans-serif;
 	width: 400px;
 	height: 500px;
 	border: 1px solid #000;
