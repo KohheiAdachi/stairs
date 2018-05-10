@@ -9,10 +9,19 @@
 import UIKit
 
 class TableViewController: UITableViewController {
-
+let name1: [String] = ["aaa","bbb","ccc"] //定数
+let name2: [String] = ["ddd","eee","fff"]
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        //let name1: [String] = ["aaa","bbb","ccc"] //定数
+        //var name2: [String] = [] //変数
+       // let name2: [String] = ["ddd","eee","fff"]
+        
+        
+        
+        
+        
+        
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -29,23 +38,47 @@ class TableViewController: UITableViewController {
 
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 2
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 0
+        if section == 0 {
+            return name1.count
+        } else {
+            return name2.count
+        }
     }
 
-    /*
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "TableViewCell", for: indexPath) as! TableViewCell
 
         // Configure the cell...
+        
+        if indexPath.section == 0{
+            cell.name.text = name1[indexPath.item]
+        }else{
+            cell.name.text = name2[indexPath.item]
+        }
 
         return cell
     }
-    */
+    
+    override func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 40
+    }
+    
+    override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        return "section\(section)"
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        performSegue(withIdentifier: "segue", sender: nil)
+    }
+    
+    
+    
 
     /*
     // Override to support conditional editing of the table view.

@@ -103,9 +103,9 @@
 				577D0A8820A444820005968E /* Main.storyboard */,
 				577D0A8B20A444840005968E /* Assets.xcassets */,
 				577D0A8D20A444840005968E /* LaunchScreen.storyboard */,
-				577D0A9020A444840005968E /* Info.plist */,
 				577D0AB220A446F30005968E /* TableViewController.swift */,
 				577D0AB420A4477F0005968E /* TableViewCell.swift */,
+				577D0A9020A444840005968E /* Info.plist */,
 			);
 			path = UITableViewStudy;
 			sourceTree = "<group>";
