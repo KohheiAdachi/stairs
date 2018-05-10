@@ -14,6 +14,7 @@
 		577D0A9A20A444840005968E /* UITableViewStudyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577D0A9920A444840005968E /* UITableViewStudyTests.swift */; };
 		577D0AA520A444840005968E /* UITableViewStudyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577D0AA420A444840005968E /* UITableViewStudyUITests.swift */; };
 		577D0AB320A446F30005968E /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577D0AB220A446F30005968E /* TableViewController.swift */; };
+		577D0AB520A4477F0005968E /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577D0AB420A4477F0005968E /* TableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		577D0AA420A444840005968E /* UITableViewStudyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITableViewStudyUITests.swift; sourceTree = "<group>"; };
 		577D0AA620A444840005968E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		577D0AB220A446F30005968E /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		577D0AB420A4477F0005968E /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				577D0A8D20A444840005968E /* LaunchScreen.storyboard */,
 				577D0A9020A444840005968E /* Info.plist */,
 				577D0AB220A446F30005968E /* TableViewController.swift */,
+				577D0AB420A4477F0005968E /* TableViewCell.swift */,
 			);
 			path = UITableViewStudy;
 			sourceTree = "<group>";
@@ -256,6 +259,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				577D0AB520A4477F0005968E /* TableViewCell.swift in Sources */,
 				577D0A8520A444820005968E /* AppDelegate.swift in Sources */,
 				577D0AB320A446F30005968E /* TableViewController.swift in Sources */,
 			);
