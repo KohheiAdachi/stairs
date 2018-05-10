@@ -72,13 +72,13 @@
         <!--View Controller-->
         <scene sceneID="cDL-8V-IFf">
             <objects>
-                <viewController id="Tfd-jS-GhR" sceneMemberID="viewController">
+                <viewController id="Tfd-jS-GhR" customClass="VIViewController" customModule="UITableViewStudy" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="F2Q-i4-s9Z">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="owU-r6-06H">
-                                <rect key="frame" x="147" y="313" width="81" height="41"/>
+                                <rect key="frame" x="147" y="456" width="81" height="41"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="34"/>
                                 <nil key="textColor"/>
@@ -88,10 +88,13 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="4aD-dX-YE1"/>
                     </view>
+                    <connections>
+                        <outlet property="label" destination="owU-r6-06H" id="J4a-EV-hlv"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JTc-7x-JE0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3034" y="133"/>
+            <point key="canvasLocation" x="2942" y="133"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Asp-tP-q3R">

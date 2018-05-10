@@ -11,6 +11,8 @@ import UIKit
 class TableViewController: UITableViewController {
 let name1: [String] = ["aaa","bbb","ccc"] //定数
 let name2: [String] = ["ddd","eee","fff"]
+    
+    var giveData: String = ""
     override func viewDidLoad() {
         super.viewDidLoad()
         //let name1: [String] = ["aaa","bbb","ccc"] //定数
@@ -74,6 +76,11 @@ let name2: [String] = ["ddd","eee","fff"]
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if indexPath.section == 0{
+            giveData = name1[indexPath.item]
+        }else{
+            giveData = name2[indexPath.item]
+        }
         performSegue(withIdentifier: "segue", sender: nil)
     }
     
@@ -115,14 +122,19 @@ let name2: [String] = ["ddd","eee","fff"]
     }
     */
 
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
+        if segue.identifier == "segue"{
+            let vc = segue.destination as! VIViewController
+            vc.receiveData = giveData
+            
+        }
     }
-    */
+    
 
 }
