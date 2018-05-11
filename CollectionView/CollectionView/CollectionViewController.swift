@@ -8,9 +8,14 @@
 
 import UIKit
 
-private let reuseIdentifier = "Cell"
-
 class CollectionViewController: UICollectionViewController {
+    
+    let colors : [UIColor] = [UIColor.black,UIColor.blue,UIColor.brown]
+    
+    let colorNames: [String] = ["black","blue","brown"]
+    var giveColor: UIColor = UIColor.black
+    var giveColorName: String = "black"
+
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,7 +24,7 @@ class CollectionViewController: UICollectionViewController {
         // self.clearsSelectionOnViewWillAppear = false
 
         // Register cell classes
-        self.collectionView!.register(UICollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
+
 
         // Do any additional setup after loading the view.
     }
@@ -43,23 +48,43 @@ class CollectionViewController: UICollectionViewController {
 
     override func numberOfSections(in collectionView: UICollectionView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
 
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of items
-        return 0
+        
+        
+        return colors.count
+        
+       
+        
     }
 
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath)
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CollectionViewCell", for: indexPath) as! CollectionViewCell
     
         // Configure the cell
+       cell.label.backgroundColor =  colors[indexPath.item]
     
         return cell
     }
-
+    
+    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        giveColor = colors[indexPath.item]
+        giveColorName = colorNames[indexPath.item]
+        performSegue(withIdentifier: "Segue", sender: nil)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+       
+        if segue.identifier == "Segue" {
+            let vc = segue.destination as! ViewController
+            vc.receiveColor = giveColor
+            vc.receiveColorName = giveColorName
+        }
+    }
     // MARK: UICollectionViewDelegate
 
     /*

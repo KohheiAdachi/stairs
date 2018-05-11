@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		577D0ACD20A595EB0005968E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577D0ACC20A595EB0005968E /* AppDelegate.swift */; };
-		577D0ACF20A595EB0005968E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577D0ACE20A595EB0005968E /* ViewController.swift */; };
 		577D0AD220A595EB0005968E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 577D0AD020A595EB0005968E /* Main.storyboard */; };
 		577D0AD420A595ED0005968E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 577D0AD320A595ED0005968E /* Assets.xcassets */; };
 		577D0AD720A595ED0005968E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 577D0AD520A595ED0005968E /* LaunchScreen.storyboard */; };
@@ -16,6 +15,7 @@
 		577D0AED20A595EE0005968E /* CollectionViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577D0AEC20A595EE0005968E /* CollectionViewUITests.swift */; };
 		577D0AFB20A599390005968E /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577D0AFA20A599390005968E /* CollectionViewController.swift */; };
 		577D0AFD20A5996F0005968E /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577D0AFC20A5996F0005968E /* CollectionViewCell.swift */; };
+		577D0AFF20A59EE90005968E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577D0AFE20A59EE90005968E /* ViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +38,6 @@
 /* Begin PBXFileReference section */
 		577D0AC920A595EB0005968E /* CollectionView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CollectionView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		577D0ACC20A595EB0005968E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		577D0ACE20A595EB0005968E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		577D0AD120A595EB0005968E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		577D0AD320A595ED0005968E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		577D0AD620A595ED0005968E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +50,7 @@
 		577D0AEE20A595EE0005968E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		577D0AFA20A599390005968E /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
 		577D0AFC20A5996F0005968E /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		577D0AFE20A59EE90005968E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,9 +102,9 @@
 			isa = PBXGroup;
 			children = (
 				577D0ACC20A595EB0005968E /* AppDelegate.swift */,
-				577D0ACE20A595EB0005968E /* ViewController.swift */,
 				577D0AFA20A599390005968E /* CollectionViewController.swift */,
 				577D0AFC20A5996F0005968E /* CollectionViewCell.swift */,
+				577D0AFE20A59EE90005968E /* ViewController.swift */,
 				577D0AD020A595EB0005968E /* Main.storyboard */,
 				577D0AD320A595ED0005968E /* Assets.xcassets */,
 				577D0AD520A595ED0005968E /* LaunchScreen.storyboard */,
@@ -263,8 +263,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				577D0AFB20A599390005968E /* CollectionViewController.swift in Sources */,
-				577D0ACF20A595EB0005968E /* ViewController.swift in Sources */,
 				577D0AFD20A5996F0005968E /* CollectionViewCell.swift in Sources */,
+				577D0AFF20A59EE90005968E /* ViewController.swift in Sources */,
 				577D0ACD20A595EB0005968E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
