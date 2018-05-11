@@ -15,6 +15,7 @@
 		577D0AE220A595EE0005968E /* CollectionViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577D0AE120A595EE0005968E /* CollectionViewTests.swift */; };
 		577D0AED20A595EE0005968E /* CollectionViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577D0AEC20A595EE0005968E /* CollectionViewUITests.swift */; };
 		577D0AFB20A599390005968E /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577D0AFA20A599390005968E /* CollectionViewController.swift */; };
+		577D0AFD20A5996F0005968E /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 577D0AFC20A5996F0005968E /* CollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		577D0AEC20A595EE0005968E /* CollectionViewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewUITests.swift; sourceTree = "<group>"; };
 		577D0AEE20A595EE0005968E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		577D0AFA20A599390005968E /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
+		577D0AFC20A5996F0005968E /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,11 +103,12 @@
 			children = (
 				577D0ACC20A595EB0005968E /* AppDelegate.swift */,
 				577D0ACE20A595EB0005968E /* ViewController.swift */,
+				577D0AFA20A599390005968E /* CollectionViewController.swift */,
+				577D0AFC20A5996F0005968E /* CollectionViewCell.swift */,
 				577D0AD020A595EB0005968E /* Main.storyboard */,
 				577D0AD320A595ED0005968E /* Assets.xcassets */,
 				577D0AD520A595ED0005968E /* LaunchScreen.storyboard */,
 				577D0AD820A595ED0005968E /* Info.plist */,
-				577D0AFA20A599390005968E /* CollectionViewController.swift */,
 			);
 			path = CollectionView;
 			sourceTree = "<group>";
@@ -261,6 +264,7 @@
 			files = (
 				577D0AFB20A599390005968E /* CollectionViewController.swift in Sources */,
 				577D0ACF20A595EB0005968E /* ViewController.swift in Sources */,
+				577D0AFD20A5996F0005968E /* CollectionViewCell.swift in Sources */,
 				577D0ACD20A595EB0005968E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
