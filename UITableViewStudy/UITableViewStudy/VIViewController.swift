@@ -11,11 +11,34 @@ import UIKit
 class VIViewController: UIViewController {
     
     var receiveData: String = ""
-
+    
+    var receivenum : Int = 0
+    
+    var img1 = UIImage(named: "daruma.jpg")
+    var img2 = UIImage(named: "erubo.jpg")
+    var img3 = UIImage(named: "sinsin.jpg")
+    var img4 = UIImage(named: "mendoujo.jpg")
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         label.text = receiveData
+        
+        if receiveData == "だるま"{
+            image.image = img1
+        }
+        if receiveData == "Sin Sin"{
+            image.image = img3
+        }
+        if receiveData == "エルボー"{
+            image.image = img2
+        }
+        if receiveData == "麺道場"{
+            image.image = img4
+        }
+        
         // Do any additional setup after loading the view.
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -34,5 +57,6 @@ class VIViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
+    @IBOutlet weak var image: UIImageView!
+    
 }

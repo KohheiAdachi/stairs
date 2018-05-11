@@ -9,10 +9,11 @@
 import UIKit
 
 class TableViewController: UITableViewController {
-let name1: [String] = ["aaa","bbb","ccc"] //定数
+let name1: [String] = ["だるま","Sin Sin","エルボー","麺道場"] //定数
 let name2: [String] = ["ddd","eee","fff"]
     
     var giveData: String = ""
+    var givenum: Int = 0
     override func viewDidLoad() {
         super.viewDidLoad()
         //let name1: [String] = ["aaa","bbb","ccc"] //定数
@@ -72,6 +73,7 @@ let name2: [String] = ["ddd","eee","fff"]
     }
     
     override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        givenum = section
         return "section\(section)"
     }
     
